@@ -7,3 +7,13 @@ document.querySelector('.header button').addEventListener('click', () => {
     alert('Email ou senha inválidos.');
   }
 });
+
+const checkBox = document.querySelector('#agreement');
+const btn = document.querySelector('#submit-btn');
+checkBox.addEventListener('change', () => {
+  if (checkBox.checked) {
+    btn.removeAttribute('disabled');
+    return;
+  }
+  btn.setAttribute('disabled', '');
+});
