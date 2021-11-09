@@ -17,3 +17,9 @@ checkBox.addEventListener('change', () => {
   }
   btn.setAttribute('disabled', '');
 });
+
+const textArea = document.querySelector('#textarea');
+textArea.addEventListener('keyup', () => {
+  const span = document.querySelector('#counter');
+  span.innerHTML = 500 - textArea.value.length;
+});
