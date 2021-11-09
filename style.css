@@ -22,7 +22,7 @@ main {
   display: flex;
 }
 
-#evaluation-form {
+#evaluation-form , #container-form {
   display: flex;
   flex-direction: column;
   width: 675px;
@@ -38,4 +38,8 @@ main {
 
 .row {
   display: flex;
+}
+
+#infos {
+  display: none;
 }
